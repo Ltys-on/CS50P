@@ -7,20 +7,21 @@ def main():
             print(str(date))
             break
 
+
 def output_date(input_date):
     valid_months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
     ]
     try:
         if input_date.find(",") != -1:
@@ -42,7 +43,7 @@ def output_date(input_date):
         return None
 
     if month <= 12 and month >= 1 and day <= 31 and day >= 1:
-        return(f"{year}-{month:02}-{day:02}")
+        return f"{year}-{month:02}-{day:02}"
 
 
 main()

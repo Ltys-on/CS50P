@@ -1,8 +1,10 @@
-from random import choice
+import random
 
 def main():
-    coin = choice(["heads", "tails"])
-    print(coin)
+    cards = ["jack", "queen", "king"]
+    random.shuffle(cards)
+    for card in cards:
+        print(card)
 
 
 main()
